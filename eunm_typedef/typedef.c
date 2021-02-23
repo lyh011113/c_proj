@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 //typedef
-//typedef 기본자료형(int, char, struct, eunm, union...) 내가 쓸 자료형 이름 (Alias)
+//typedef 기본자료형(int, char, struct, eunm, union...) 내가 쓸 자료형 이름 ( Alias 별명 )
 
 typedef int AGE;//int age
 typedef char* NAME;//char*NAME
