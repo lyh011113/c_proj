@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main 02.c">
+    <ClCompile Include="enum.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="typedef.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

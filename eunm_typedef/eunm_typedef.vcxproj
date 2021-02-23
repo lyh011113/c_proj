@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4367a054-5b50-41fe-93f4-14f59c00c35a}</ProjectGuid>
-    <RootNamespace>Gitex02</RootNamespace>
+    <ProjectGuid>{98948cbc-1fd0-4cae-b3b4-24546edfeb2a}</ProjectGuid>
+    <RootNamespace>eunmtypedef</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main 02.c" />
+    <ClCompile Include="enum.c" />
+    <ClCompile Include="typedef.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
