@@ -26,6 +26,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.전처리기", "03.전�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "preprocessor", "preprocessor\preprocessor.vcxproj", "{1238808D-FFCC-4B35-977E-045E4BCC3BAE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE3F8B03-D75A-4699-9AEB-5A7E8D5876A2}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bookcafe-project-v1.0", "bookcafe-src\bookcafe-project-v1.0\bookcafe-project-v1.0.vcxproj", "{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -66,6 +73,14 @@ Global
 		{1238808D-FFCC-4B35-977E-045E4BCC3BAE}.Release|x64.Build.0 = Release|x64
 		{1238808D-FFCC-4B35-977E-045E4BCC3BAE}.Release|x86.ActiveCfg = Release|Win32
 		{1238808D-FFCC-4B35-977E-045E4BCC3BAE}.Release|x86.Build.0 = Release|Win32
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Debug|x64.ActiveCfg = Debug|x64
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Debug|x64.Build.0 = Debug|x64
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Debug|x86.ActiveCfg = Debug|Win32
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Debug|x86.Build.0 = Debug|Win32
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x64.ActiveCfg = Release|x64
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x64.Build.0 = Release|x64
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x86.ActiveCfg = Release|Win32
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +93,7 @@ Global
 		{98948CBC-1FD0-4CAE-B3B4-24546EDFEB2A} = {D135E226-88EC-4EAE-B57F-D7D1B704AE3C}
 		{D9BA0500-5A5D-4F9C-9850-B0A17011C819} = {6924022F-A8B9-4833-BA18-6DD7CBD567A4}
 		{1238808D-FFCC-4B35-977E-045E4BCC3BAE} = {D9BA0500-5A5D-4F9C-9850-B0A17011C819}
+		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063} = {7FF99203-BF89-4C3A-B76A-46551456F7B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98389033-E89C-4B13-B9F6-803C9E41185C}
