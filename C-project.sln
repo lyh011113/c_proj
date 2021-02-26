@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. 열거형_Typedef", "02
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "eunm_typedef", "eunm_typedef\eunm_typedef.vcxproj", "{98948CBC-1FD0-4CAE-B3B4-24546EDFEB2A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.전처리기", "03.전처리기", "{D9BA0500-5A5D-4F9C-9850-B0A17011C819}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. 전처리기", "03. 전처리기", "{D9BA0500-5A5D-4F9C-9850-B0A17011C819}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "preprocessor", "preprocessor\preprocessor.vcxproj", "{1238808D-FFCC-4B35-977E-045E4BCC3BAE}"
 EndProject
@@ -32,6 +32,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bookcafe-project-v1.0", "bookcafe-src\bookcafe-project-v1.0\bookcafe-project-v1.0.vcxproj", "{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. 파일IO", "04. 파일IO", "{A575F6BE-66E2-4B7C-87DA-D591CB473650}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fileio", "fileio\fileio.vcxproj", "{B6654173-8508-413F-9B06-8089C05EC290}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x64.Build.0 = Release|x64
 		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x86.ActiveCfg = Release|Win32
 		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063}.Release|x86.Build.0 = Release|Win32
+		{B6654173-8508-413F-9B06-8089C05EC290}.Debug|x64.ActiveCfg = Debug|x64
+		{B6654173-8508-413F-9B06-8089C05EC290}.Debug|x64.Build.0 = Debug|x64
+		{B6654173-8508-413F-9B06-8089C05EC290}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6654173-8508-413F-9B06-8089C05EC290}.Debug|x86.Build.0 = Debug|Win32
+		{B6654173-8508-413F-9B06-8089C05EC290}.Release|x64.ActiveCfg = Release|x64
+		{B6654173-8508-413F-9B06-8089C05EC290}.Release|x64.Build.0 = Release|x64
+		{B6654173-8508-413F-9B06-8089C05EC290}.Release|x86.ActiveCfg = Release|Win32
+		{B6654173-8508-413F-9B06-8089C05EC290}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +106,8 @@ Global
 		{D9BA0500-5A5D-4F9C-9850-B0A17011C819} = {6924022F-A8B9-4833-BA18-6DD7CBD567A4}
 		{1238808D-FFCC-4B35-977E-045E4BCC3BAE} = {D9BA0500-5A5D-4F9C-9850-B0A17011C819}
 		{99EEA774-B3AB-4462-8EF0-4EDC2A3AE063} = {7FF99203-BF89-4C3A-B76A-46551456F7B8}
+		{A575F6BE-66E2-4B7C-87DA-D591CB473650} = {6924022F-A8B9-4833-BA18-6DD7CBD567A4}
+		{B6654173-8508-413F-9B06-8089C05EC290} = {A575F6BE-66E2-4B7C-87DA-D591CB473650}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98389033-E89C-4B13-B9F6-803C9E41185C}

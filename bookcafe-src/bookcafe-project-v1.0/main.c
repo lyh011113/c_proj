@@ -17,6 +17,10 @@ int book_idx = 0; // 배열 인덱스
 //함수 선언부 (1)
 
 void add();  // 책을 추가하는 함수
+
+// -- 배열로 입력된 값들을 검색해서, 해당 배열 index를 가지고
+// -- 그 index에 있는 값을 삭제(NULL)
+
 void del();  // 책을 삭제하는 함수
 void list(); // 책목록을 출력하는 함수
 void find(); // 책을 찾는 함수
@@ -46,6 +50,7 @@ int main(void) {
 		}
 		else if (strcmp(command, "del") == 0) {
 			del();
+			
 		}
 		else if (strcmp(command, "list") == 0) {
 			list();
@@ -99,9 +104,79 @@ void add() {
 	printf("'%s'를 저장하였습니다.\n", book_name[book_idx]);
 		book_idx++;
 }
+// -- 배열로 입력된 값들을 검색해서, 해당 배열 index를 가지고
+// -- 그 index에 있는 값을 삭제(NULL)
+
 void del() {
-	printf("del함수 호출!\n");
+
+	//책이름을 검색하고, 그 책이름이 있는 배열 index를 추출
+
+	char* search_txt[100];
+
+
+	scanf("%s", search_txt);
+
+	// 사용자로 부터 받은 값, '검색어'와 book_names[x]에 있는 '책이름'이 일치하는지 확인
+	// 그 index 삭제
+/*
+	for (int i = 0; i < book_idx; i++) {
+		// 문자열 비교가 필요함, strcmp()
+		// 배열의 인덱스는 0부터 시작한다.
+		// 퀴즈 배열이 "크기"(총 방의 숫자)가 150개
+		// 그럼 배열의 마지막 인덱스는 몇일까요?
+		// 배열의 크기가 10인 배열
+		// 0 1 2 3 4 5 6 7 8 9 ( 10 -1)
+		// 배열의 크기가 150 이라고 하면 배열의 마지막 인덱스 150 - 1 = 149 (배열의 크기 - 1)
+
+
+		if (strcmp(book_name[i], search_txt) == 0) {
+			book_name[i] = book_name[book_idx-1];
+			book_author[i] = book_author[book_idx-1];
+			printf("%s가 삭제되었습니다.\n", search_txt);
+			book_idx--;
+			return;
+		}
+		*/
+		/*
+	int temp_idx;
+	for(temp_idx = 0; temp_idx < book_idx; temp_idx++){
+		if (strcmp(book_name[temp_idx], search_txt) == 0) {
+			printf("%s가 삭제되었습니다.\n", search_txt);
+			break;
+		}
+	}
+	if (temp_idx != book_idx) {
+		for (int i = temp_idx ; i < book_idx; i++) {
+			book_name[i] = book_name[i + 1];
+			book_author[i] = book_author[i + 1];
+
+		}
+		book_idx--;
+		return;
+	}
+
+	*/
+
+	for (int D = 0; D < book_idx; D++) {
+		if (strcmp(book_name[D], search_txt) == 0) {
+			for (int i = D; i < book_idx; i++) {
+				book_name[i] = book_name[i + 1];
+
+				book_author[i] = book_author[i + 1];
+
+			}
+			printf("%s가 삭제되었습니다.\n", search_txt);
+			book_idx--;
+			return;
+		}
+		// search_txt!=book_name[i] 같지 않은 경우는 i == book_idx
+		// 책이름이 'ABC', 'BBB', 'CCC', 'DDD' 라고 총 4개가 있을 경우
+		
+	}
+	printf("책이름이 %s인 책은 존재하지 않습니다.\n", search_txt);
 }
+
+
 void find() {
 	//book_name[] = 10개가 있다.
 	//10번을 돌면서 같은 이름이 있는지 확인하고, 있으면
@@ -122,6 +197,7 @@ void find() {
 }
 void list() {
 	for (int i = 0; i < book_idx; i++) {
+
 		printf("%-10s %-10s\n", book_name[i], book_author[i]);
 	}
 }
